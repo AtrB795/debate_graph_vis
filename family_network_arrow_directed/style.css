@@ -1,0 +1,41 @@
+
+path.link {
+    fill: none;
+
+    stroke-width: 1.5px;
+}
+
+text {
+    fill: #000;
+    font: 10px sans-serif;
+    pointer-events: none;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+    "header header"
+    "tree info"
+}
+
+
+h1 {
+    grid-area: header;
+    border: 5px solid blue;
+}
+
+.graph-container {
+    grid-area: tree;
+    border: 5px solid blue;
+    overflow: auto;
+    height: 50%;
+}
+
+.info-container {
+    grid-area: info;
+    border: 5px solid red;
+    height: 50%;
+}
